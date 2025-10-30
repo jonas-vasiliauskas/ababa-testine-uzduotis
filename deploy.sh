@@ -1,33 +1,24 @@
-# from project root (be careful, edit before running)
-DOMAIN=example.com
-FRONTEND=/var/www/movie-list/frontend
-BACKEND=/var/www/movie-list/backend
+#!/bin/bash
 
-# Build frontend
-cd $FRONTEND
-npm install
-npm run build
-sudo chown -R www-data:www-data $FRONTEND/dist
-sudo chmod -R 755 $FRONTEND/dist
-
-# Build backend
-cd $BACKEND
-npm install
-npm run build
-
-# Restart backend systemd service
-sudo systemctl daemon-reload
-sudo systemctl restart movie-list-backend
-
-# Test nginx conf and reload
-sudo nginx -t && sudo systemctl reload nginx
-
-# my edition
-
-
-cd /var/www/movie-list/backend
-npm run start:dev
-
+# FRONTEND
+echo "🚀 Building frontend..."
 cd /var/www/movie-list/frontend
-npm run dev
+npm install
+npm run build
 
+echo "✅ Frontend build complete"
+
+# BACKEND
+echo "🚀 Starting backend..."
+cd /var/www/movie-list/backend
+npm install
+npm run build
+node dist/main.js &
+BACKEND_PID=$!
+
+echo "✅ Backend running on PID $BACKEND_PID"
+
+# Start local Nginx viewer for frontend
+echo "🌐 Serving frontend via Nginx... (keep terminal open)"
+echo "Press CTRL+C to stop both services"
+wait $BACKEND_PID
