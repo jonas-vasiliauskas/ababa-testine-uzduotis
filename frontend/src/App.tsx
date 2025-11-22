@@ -114,64 +114,64 @@ export default function App() {
 )}
 
      
-      <div className={`${divAttributes} w-full bg-white text-black flex flex-col items-start justify-start`}>
-        <table>
-          <thead>
+      <div className={`${divAttributes} bg-white text-black flex flex-col items-start justify-start`}>
+        <table class='border-1'>
+          <thead class='border-1'>
             <tr>
-              <th scope="col">Režisierius</th>
-              <th scope="col">Pavadinimas orginalo kalba</th>
-              <th scope="col">Pavadinimas lietuvių kalba</th>
-              <th scope="col">Žandras</th>
-              <th scope="col">Aktoriai</th>
-              <th scope="col">Apie</th>
-              <th scope="col">Metai</th>
+              <th scope="col" class="border-1">Režisierius</th>
+              <th scope="col" class="border-1">Pavadinimas orginalo kalba</th>
+              <th scope="col" class="border-1">Pavadinimas lietuvių kalba</th>
+              <th scope="col" class="border-1">Žandras</th>
+              <th scope="col" class="border-1">Aktoriai</th>
+              <th scope="col" class="border-1">Apie</th>
+              <th scope="col" class="border-1">Metai</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td scope="col">Vardenis Pavardenis</td>
-              <td scope="col">Name</td>
-              <td scope="col">Pavadinimas</td>
-              <td scope="col">Komedija</td>
-              <td scope="col">Aktorius 1, Aktorius 2</td>
-              <td scope="col">---</td>
-              <td scope="col">2020</td>
+          <tbody class='border-1'>
+            <tr class='border-1'>
+              <td scope="col" class="border-1">Vardenis Pavardenis</td>
+              <td scope="col" class="border-1">Name</td>
+              <td scope="col" class="border-1">Pavadinimas</td>
+              <td scope="col" class="border-1">Komedija</td>
+              <td scope="col" class="border-1">Aktorius 1, Aktorius 2</td>
+              <td scope="col" class="border-1">--- --- --- --- --- --- --- --- --- --- </td>
+              <td scope="col" class="border-1">2020</td>
             </tr>
-            <tr>
-              <td scope="col">Vardenė Pavardenė</td>
-              <td scope="col">Name</td>
-              <td scope="col">Pavadinimas 2</td>
-              <td scope="col">Drama</td>
-              <td scope="col">Aktorius 1, Aktorius 3, Aktorius 2</td>
-              <td scope="col">+++</td>
-              <td scope="col">2014</td>
+            <tr class='border-1'>
+              <td scope="col" class="border-1">Vardenė Pavardenė</td>
+              <td scope="col" class="border-1">Name</td>
+              <td scope="col" class="border-1">Pavadinimas 2</td>
+              <td scope="col" class="border-1">Drama</td>
+              <td scope="col" class="border-1">Aktorius 1, Aktorius 3, Aktorius 2</td>
+              <td scope="col" class="border-1">+++ +++ +++ +++ +++ +++ +++ </td>
+              <td scope="col" class="border-1">2014</td>
             </tr>
-            <tr>
-              <td scope="col">Vardenis Pavardenis</td>
-              <td scope="col">Name 2</td>
-              <td scope="col">Pavadinimas 2</td>
-              <td scope="col">Komedija</td>
-              <td scope="col">Aktorius 1, Aktorius 2</td>
-              <td scope="col">***</td>
-              <td scope="col">2022</td>
+            <tr class='border-1'>
+              <td scope="col" class="border-1">Vardenis Pavardenis</td>
+              <td scope="col" class="border-1">Name 2</td>
+              <td scope="col" class="border-1">Pavadinimas 2</td>
+              <td scope="col" class="border-1">Komedija</td>
+              <td scope="col" class="border-1">Aktorius 1, Aktorius 2</td>
+              <td scope="col" class="border-1">*** *** *** *** *** *** *** *** </td>
+              <td scope="col" class="border-1">2022</td>
             </tr>
-            <tr>
-              <td scope="col">Vardenis Pavardenis</td>
-              <td scope="col">Name 3</td>
-              <td scope="col">Pavadinimas 3</td>
-              <td scope="col">Trileris</td>
-              <td scope="col">Aktorius 1, Aktorius 2, Aktorius 5</td>
-              <td scope="col">///</td>
-              <td scope="col">1990</td>
+            <tr class='border-1'>
+              <td scope="col" class="border-1">Vardenis Pavardenis</td>
+              <td scope="col" class="border-1">Name 3</td>
+              <td scope="col" class="border-1">Pavadinimas 3</td>
+              <td scope="col" class="border-1">Trileris</td>
+              <td scope="col" class="border-1">Aktorius 1, Aktorius 2, Aktorius 5</td>
+              <td scope="col" class="border-1">/// /// /// /// /// /// /// /// /// /// </td>
+              <td scope="col" class="border-1">1990</td>
             </tr>
-            <tr>
-              <td scope="col">Vardenis Pavardenis</td>
-              <td scope="col">Name 3</td>
-              <td scope="col">Pavadinimas 3</td>
-              <td scope="col">Trileris</td>
-              <td scope="col">Aktorius 1, Aktorius 2, Aktorius 5</td>
-              <td scope="col">###</td>
-              <td scope="col">1990</td>
+            <tr class='border-1'>
+              <td scope="col" class="border-1">Vardenis Pavardenis</td>
+              <td scope="col" class="border-1">Name 4</td>
+              <td scope="col" class="border-1">Pavadinimas 4</td>
+              <td scope="col" class="border-1">Trileris</td>
+              <td scope="col" class="border-1">Aktorius 1, Aktorius 2, Aktorius 5</td>
+              <td scope="col" class="border-1">### ### ### ### ### ### ### ### ### ### </td>
+              <td scope="col" class="border-1">1990</td>
             </tr>
           </tbody>
         </table>
