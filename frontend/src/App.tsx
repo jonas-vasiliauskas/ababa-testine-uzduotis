@@ -45,7 +45,7 @@ export default function App() {
       });
 
       if (
-        e.target.email.value === "vas.jonas@gmail.com" &&
+        e.target.email.value === "test@gmail.com" &&
         e.target.password.value === "test"
       ) {
         dispatch(logIn());
@@ -106,7 +106,7 @@ export default function App() {
           <form onSubmit={userLogIn} className="space-y-5">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">
-                Email Address
+                El. paštas
               </label>
               <input
                 id="email"
@@ -118,7 +118,7 @@ export default function App() {
 
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-600 mb-1">
-                Password
+                Slaptažodis
               </label>
               <input
                 type="password"
@@ -135,7 +135,7 @@ export default function App() {
               className="w-full bg-blue-600 text-white py-2 rounded-lg 
               font-semibold hover:bg-green-700 transition duration-200"
             >
-              Log in
+              Prisijungti
             </button>
 
             <p id="login_form_error_msg">{logInErrorMsg}</p>
@@ -151,7 +151,10 @@ export default function App() {
         </p>
       )}
 
-      <div className={`${divAttributes} bg-white text-black flex flex-col items-start justify-start`}>
+      <div className={`${divAttributes} bg-white text-black items-start`}>
+        <p className="flex justify-center mb-3">
+            Mėgstamiausių filmų sąrašas
+        </p>
         <table className="border-1">
           <thead className="border-1">
             <tr>
